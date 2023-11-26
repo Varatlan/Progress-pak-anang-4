@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7e777b9c-9941-4aaa-9cd2-c4c84901fb9a">
+	<property name="ireport.zoom" value="1.210000000000001"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from buku;]]>
+	</queryString>
+	<field name="isbn" class="java.lang.String"/>
+	<field name="judul" class="java.lang.String"/>
+	<field name="subjudul" class="java.lang.String"/>
+	<field name="pengarang" class="java.lang.String"/>
+	<field name="tahun" class="java.lang.String"/>
+	<field name="halaman" class="java.lang.String"/>
+	<field name="penerbit" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="164" y="13" width="225" height="49" uuid="42956915-c7f5-4780-bb08-4b332f66c887"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Baskerville Old Face" size="32"/>
+				</textElement>
+				<text><![CDATA[Laporan Buku]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="57" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="52" splitType="Stretch">
+			<staticText>
+				<reportElement x="78" y="32" width="25" height="20" uuid="ae460e68-7f8d-4412-b8ff-70505c78be3c"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Baskerville Old Face"/>
+				</textElement>
+				<text><![CDATA[ isbn]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="103" y="32" width="79" height="20" uuid="5e543980-6915-4eca-8a35-3dedfd757941"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Baskerville Old Face"/>
+				</textElement>
+				<text><![CDATA[ judul]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="182" y="32" width="47" height="20" uuid="f42ceeed-ea7d-47ef-865f-a43a6e3b9fd4"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Baskerville Old Face"/>
+				</textElement>
+				<text><![CDATA[ subjudul]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="229" y="32" width="79" height="20" uuid="da5dced2-58cf-4cab-bd3e-fde2d557fd2e"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Baskerville Old Face"/>
+				</textElement>
+				<text><![CDATA[ pengarang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="308" y="32" width="45" height="20" uuid="f4e5c15c-3d01-43d0-be31-6e9f01e59520"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Baskerville Old Face"/>
+				</textElement>
+				<text><![CDATA[ tahun]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="353" y="32" width="48" height="20" uuid="7f6c81ea-9f5f-462e-aeca-514c3d8084b5"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Baskerville Old Face"/>
+				</textElement>
+				<text><![CDATA[ halaman]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="401" y="32" width="79" height="20" uuid="4eb55011-e744-421e-9e20-700446fe287a"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Baskerville Old Face"/>
+				</textElement>
+				<text><![CDATA[ penerbit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="58" y="32" width="20" height="20" uuid="59004b94-d38a-4fdf-9377-39869a1e4f5e"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Baskerville Old Face"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="401" y="17" width="91" height="15" uuid="ca701afb-6abb-4d57-9333-76a3133b3f5f"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="78" y="0" width="25" height="20" uuid="4fa70151-0ab6-4292-849a-4f5c4bdc2722"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Baskerville Old Face"/>
+					<paragraph firstLineIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[ $F{isbn}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="103" y="0" width="79" height="20" uuid="f7865543-9953-4b2c-9618-8f0749123302"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Baskerville Old Face"/>
+					<paragraph firstLineIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[ $F{judul}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="182" y="0" width="47" height="20" uuid="9c55a9b4-6ca3-4c94-8740-70e97f0156b8"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Baskerville Old Face"/>
+					<paragraph firstLineIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[ $F{subjudul}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="229" y="0" width="79" height="20" uuid="51e877ca-e849-4039-af1a-9a6caba17c80"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Baskerville Old Face"/>
+					<paragraph firstLineIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[ $F{pengarang}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="308" y="0" width="45" height="20" uuid="1a4a4c01-ac1b-4c95-bfa6-5c536b14c2b6"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Baskerville Old Face"/>
+					<paragraph firstLineIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[ $F{tahun}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="353" y="0" width="48" height="20" uuid="4523e54e-4b90-455c-b14d-5ba3160dcf3b"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Baskerville Old Face"/>
+					<paragraph firstLineIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[ $F{halaman}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="401" y="0" width="79" height="20" uuid="23487d2c-3fa8-4a99-a0d4-41737e00c97f"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Baskerville Old Face"/>
+					<paragraph firstLineIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[ $F{penerbit}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="58" y="0" width="20" height="20" uuid="a0c37cbc-a032-4832-8230-e2e8cfa3bfe1"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Baskerville Old Face"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{COLUMN_COUNT}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
